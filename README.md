@@ -26,7 +26,7 @@ Income and category amounts are saved to local storage in this browser. They do 
 
 Run npm install to install dependencies, npm run dev to start the local server, npm run lint and npm run build to check the project, and npm run deploy to publish it to GitHub Pages.
 
-Planned URL after deployment: https://a2rp.github.io/monthly-budget-planner/
+Deployed site: https://a2rp.github.io/monthly-budget-planner/
 
 ## Future improvements
 
