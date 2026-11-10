@@ -51,7 +51,9 @@ const readAmount = (value, fallback = 0) => {
     if (typeof value !== "number" && typeof value !== "string") return fallback;
     if (typeof value === "string" && value.trim() === "") return fallback;
     const amount = Number(value);
-    return Number.isFinite(amount) && amount >= 0 ? amount : fallback;
+    return Number.isFinite(amount) && amount >= 0
+        ? Math.round((amount + Number.EPSILON) * 100) / 100
+        : fallback;
 };
 
 const normalizeBudget = (saved) => {
@@ -149,8 +151,7 @@ const readBudget = () => {
 
 const amountFromInput = (value) => {
     if (value === "") return "";
-    const amount = Number(value);
-    return Number.isFinite(amount) ? Math.max(0, amount) : 0;
+    return readAmount(value);
 };
 
 const MonthlyBudgetPlanner = () => {
