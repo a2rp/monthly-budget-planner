@@ -16,7 +16,7 @@ const App = () => {
     }, []);
     return <div className={styles["app-shell"]} id="top">
         <SiteHeader title="Good Measure" mark="G" navItems={[["Plan", "#workspace"], ["Envelopes", "#envelopes"], ["Add envelope", "#add"]]} repoUrl={repository} />
-        <main className={styles["page-content"]}><MonthlyBudgetPlanner /></main>
+        <main className={styles["page-content"]} tabIndex={-1}><MonthlyBudgetPlanner /></main>
         <SiteFooter repoUrl={repository} />
         <BackToTop visible={showBackToTop} />
     </div>;

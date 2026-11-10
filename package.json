@@ -1,5 +1,6 @@
 {
   "name": "monthly-budget-planner",
+  "description": "A local-first monthly budget planner with editable spending envelopes and live allocation summaries.",
   "private": true,
   "version": "1.0.0",
   "type": "module",

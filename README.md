@@ -12,7 +12,7 @@ Good Measure is a zero-based monthly budget planner. Set take-home income, give 
 - Summary of income, assigned money, recorded spending, and unspent cash.
 - A visual split between assigned and unassigned income.
 - Add and remove categories with a confirmation step.
-- Automatic saving in this browser.
+- Automatic saving in this browser when storage is available, with a warning if browser storage is unavailable or saved data needs recovery.
 
 ## How to use it
 
